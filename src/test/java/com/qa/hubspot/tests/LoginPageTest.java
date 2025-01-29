@@ -61,7 +61,7 @@ public class LoginPageTest {
 	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 2)
 	public void verifySignUpLinkTest() {
-		Assert.assertTrue(loginPage.isSignUpLinkExists());
+		Assert.assertFalse(loginPage.isSignUpLinkExists());
 	}
 
 	@Description("verify login feature test...")

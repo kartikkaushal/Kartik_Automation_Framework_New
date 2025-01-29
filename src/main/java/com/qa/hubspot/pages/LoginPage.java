@@ -16,8 +16,9 @@ public class LoginPage extends BasePage {
 
 	// 1. Page Objects / By Locators
 	By emailID = By.id("username");
-	By password = By.id("password");
+	By password = By.id("current-password");
 	By loginButton = By.id("loginBtn");
+	By nextBtn = By.xpath("//i18n-string[.='Next']");
 	By signUpLink = By.linkText("Sign up");
 	By forgotPassword = By.linkText("Forgot my password");
 
@@ -43,6 +44,7 @@ public class LoginPage extends BasePage {
 	@Step("login with {0} and {1}")
 	public HomePage doLogin(String username, String pwd) {
 		elementUtil.doSendKeys(emailID, username);
+		elementUtil.doClick(nextBtn);
 		elementUtil.doSendKeys(password, pwd);
 		elementUtil.doClick(loginButton);
 		
