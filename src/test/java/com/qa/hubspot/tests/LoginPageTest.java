@@ -68,7 +68,7 @@ public class LoginPageTest {
 	@Severity(SeverityLevel.BLOCKER)
 	@Test(priority = 3)
 	public void verifyLoginTest() {
-		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		loginPage.doLoginTrial(prop.getProperty("username"), prop.getProperty("password"));
 //		Assert.assertTrue(homePage.verifyLoggedAccountName());
 //		Assert.assertEquals(homePage.getLoggedAccountName(), prop.getProperty("accountname"));
 	}

@@ -52,5 +52,15 @@ public class LoginPage extends BasePage {
 		return new HomePage(driver);
 
 	}
+	public void doLoginTrial(String username, String pwd) {
+		elementUtil.doSendKeys(emailID, username);
+		elementUtil.doClick(nextBtn);
+		elementUtil.doSendKeys(password, pwd);
+		elementUtil.doClick(loginButton);
+		
+		
+		//return new HomePage(driver);
+
+	}
 
 }

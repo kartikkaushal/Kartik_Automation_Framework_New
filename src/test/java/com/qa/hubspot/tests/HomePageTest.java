@@ -21,7 +21,7 @@ public class HomePageTest {
 	Properties prop;
 	LoginPage loginPage;
 	HomePage homePage;
-	
+
 	SoftAssert softAssert;
 
 	@BeforeTest

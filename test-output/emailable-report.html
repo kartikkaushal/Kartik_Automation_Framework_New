@@ -9,72 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Hub Spot Sanity Test Suite</th></tr>
-<tr><td><a href="#t0">hub spot sanity Test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">36,953</td><td></td><td></td></tr>
+<tr><td><a href="#t0">hub spot sanity Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">20,130</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hub Spot Sanity Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">hub spot sanity Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m0">verifyLoginTest</a></td><td rowspan="1">1738149082648</td><td rowspan="1">17716</td></tr><tr><th colspan="4">hub spot sanity Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m1">verifyLoginPageTitleTest</a></td><td rowspan="1">1738149067118</td><td rowspan="1">182</td></tr><tr class="passedeven"><td><a href="#m2">verifySignUpLinkTest</a></td><td rowspan="1">1738149067443</td><td rowspan="1">15181</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hub Spot Sanity Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">hub spot sanity Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m0">verifyLoginPageTitleTest</a></td><td rowspan="1">1738159114121</td><td rowspan="1">130</td></tr><tr class="passedeven"><td><a href="#m1">verifyLoginTest</a></td><td rowspan="1">1738159129613</td><td rowspan="1">1208</td></tr><tr class="passedeven"><td><a href="#m2">verifySignUpLinkTest</a></td><td rowspan="1">1738159114381</td><td rowspan="1">15220</td></tr></tbody>
 </table>
-<h2>hub spot sanity Test</h2><h3 id="m0">com.qa.hubspot.tests.LoginPageTest#verifyLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: h1.private-page__title (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.hubspot.util.ElementUtil.waitForElementPresent(ElementUtil.java:132)
-	at com.qa.hubspot.pages.HomePage.&lt;init&gt;(HomePage.java:23)
-	at com.qa.hubspot.pages.LoginPage.doLogin(LoginPage.java:52)
-	at com.qa.hubspot.tests.LoginPageTest.verifyLoginTest(LoginPageTest.java:71)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;h1.private-page__title&quot;}
-  (Session info: chrome=132.0.6834.112)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;KARTIK&apos;, ip: &apos;192.168.18.23&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.112, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\kaush\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62872}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7eb239d7da9de3c774996e116a8af0c0
-*** Element info: {Using=css selector, value=h1.private-page__title}
-	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 29 more
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.hubspot.tests.LoginPageTest#verifyLoginPageTitleTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test started--> verifyLoginPageTitleTest
+<h2>hub spot sanity Test</h2><h3 id="m0">com.qa.hubspot.tests.LoginPageTest#verifyLoginPageTitleTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test started--> verifyLoginPageTitleTest
 <br/>login page title is: HubSpot Login and Sign in<br/>Test ended--> verifyLoginPageTitleTest</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.hubspot.tests.LoginPageTest#verifyLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.qa.hubspot.tests.LoginPageTest#verifySignUpLinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
